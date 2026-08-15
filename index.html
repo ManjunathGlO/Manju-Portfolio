@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Manju | Portfolio</title> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="images/letter-m (4).png" type="image/x-icon">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+		  <a class="navbar-brand" href="index.html">
+    <span class="text-warning">M</span>anju.
+</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#certification-section" class="nav-link"><span>Certifications</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+            
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_im_birefnet.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Manjunath</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'Aspiring Data Analyst  ',
+						'Data Science Enthusiast  ',
+						'Business Intelligence Developer  ',
+						'Turning Data into Insights  ',
+						'Software Engineer  ',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p>
+    <a href="your_resume.pdf" target="_blank" class="btn btn-primary py-3 px-4">
+        Resume
+    </a>
+
+    <a href="https://github.com/ManjunathGlO" target="_blank" class="btn btn-white btn-outline-white py-3 px-4">
+        My Works
+    </a>
+</p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/bg_im.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Manjunath G L</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
+										<p><span class="title-s">Specialization:  </span> <span>Python | AI | ML </span></p>
+										<p><span class="title-s">Location: </span> <span>Bengaluru, India</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+<span>Power BI</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>EXCEL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>PYTHON</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Data Visualization</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistical Analysis</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Machine Learning</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+					
+
+									<p>I am an aspiring Data Analyst passionate about transforming raw data into meaningful business insights.
+										 I build end-to-end analytics projects using SQL, Python, Excel, Power BI, and Tableau, with a growing interest in Artificial Intelligence (AI) and Machine Learning (ML).
+										  My goal is to leverage data-driven decision-making and intelligent solutions to solve real-world business problems and create impactful insights.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span>Retail, Ecommerce, BFSI &amp; Digital Marketing</span></li>
+									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi, Kannada, Telagu</span></li>
+									<li class="d-flex"><span>BI Tools:</span> <span>Microsoft Power BI, Looker &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>Cloud, PySpark, Excel, Git, JIRA, Google Analytics &amp; SEO</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Traveling, Travel Photography, Video Editing</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/manjunathgl/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+	
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+		  <div class="col-md-10 heading-section text-center ftco-animate">
+			  <h1 class="big big-2">Resume</h1>
+			<h2 class="mb-4">Resume</h2>
+			<p>Aspiring Data Analyst with a strong foundation in SQL, Python, Excel, Power BI, Tableau, and Machine Learning. 
+				Passionate about transforming raw data into meaningful insights through data analysis, visualization, and predictive modeling.
+				 Experienced in building end-to-end analytics projects and interactive dashboards to support data-driven business decisions.</p>
+		  </div>
+		</div>
+	<div class="row">
+		<h1 class="big-4">Experience</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2026-Present</span>
+						<h2>Data Analyst Intern</h2>
+						<span class="position">Itvedant</span>
+						<p class="mt-4">ITVedant is a leading IT training institute offering practical, industry-focused programs in Data Analytics and emerging technologies. 
+							<ul>
+								<li>Completed hands-on training in SQL, Python, Excel, Power BI, Tableau, Statistics, and Machine Learning.</li>
+								<li>Built end-to-end analytics projects using real-world datasets.</li>
+								<li>Learned data cleaning, exploratory data analysis (EDA), dashboard development, and data visualization.</li>
+								<li>Practiced SQL queries, joins, window functions, CTEs, and database design.</li>
+								<li>Created interactive Power BI dashboards and Python-based analytics notebooks.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2025-2026</span>
+						<h2>Data Analyst Intern</h2>
+						<span class="position">ExcelR</span>
+						<p class="mt-4">ExcelR is a global edtech company delivering hands-on training in Data Analytics, Data Science, AI, and Business Intelligence.
+							<ul>
+								<li>Learned Excel for data analysis and business reporting.</li>
+								<li>Developed skills in SQL and relational databases.</li>
+								<li>Gained experience with Power BI, Tableau, and Python for analytics.</li>
+								<li>Worked on case studies involving sales, HR, and customer churn analysis.</li>
+								<li>Strengthened understanding of statistics and data-driven decision-making.</li>
+								<li>Built a strong foundation in data analytics and visualization techniques.</li>
+				
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+
+			
+
+		<br>
+		<br>
+
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2020-2023</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">M. S. Ramaiah University of Applied Sciences</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2017-2020</span>
+    					<h2>NTTF (Nettur Technical Training Foundation)</h2>
+    					<span class="position">Nettur Technical Training Foundation</span>
+    					<p class="mt-4">Grade: First class distinction.</p>
+    				</div>
+				</div>
+    		</div>
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Projects</h2>
+            <p>Below are the sample Data Analytics projects on SQL, Python, Power BI & ML.</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/ManjunathGlO/Customer-Churn-Analysis.git" class="block-20 zoom-effect" style="background-image: url('images/Customer_Analysis_Dashboard.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/ManjunathGlO/Super-Store-Sales-Analysis.git">Customer Churn Analysis</a></h3>
+				<div class="project-tags">
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Excel</span>
+    <span>Power BI</span>
+    <span>Machine Learning</span>
+</div>
+                <p>Built a Power BI dashboard analyzing 6,418 customers to uncover churn drivers across payment method, contract type, and tenure, revealing a 27% churn rate</p>
+				<div class="project-buttons">
+
+    <a href="https://github.com/ManjunathGlO/Customer-Churn-Analysis.git"
+       target="_blank"
+       class="project-btn github-btn">
+        <i class="fab fa-github"></i> Code
+    </a>
+
+    <a href="https://drive.google.com/file/d/1g7DENUqRuBPvTkyad7_9fxCF5D5iQ4hj/view?usp=sharing"
+       target="_blank"
+       class="project-btn demo-btn">
+        <i class="fas fa-arrow-up-right-from-square"></i> View
+    </a>
+
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/ManjunathGlO/Super-Store-Sales-Analysis.git" class="block-20 zoom-effect" style="background-image: url('images/Super_Store.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/ManjunathGlO/Super-Store-Sales-Analysis.git">Sales Performance Dashboard</a></h3>
+					<div class="project-tags">
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Excel</span>
+    <span>Power BI</span>
+    <span>Machine Learning</span>
+</div>
+                <p cente>Built an interactive Power BI dashboard analyzing $2.22M in sales and $175K profit across regions, segments, and categories to surface performance gaps</p>
+				<div class="project-buttons">
+
+    <a href="https://github.com/ManjunathGlO/Customer-Churn-Analysis.git"
+       target="_blank"
+       class="project-btn github-btn">
+        <i class="fab fa-github"></i> Code
+    </a>
+
+    <a href="https://drive.google.com/file/d/17P9Dt9lwJFobzNeJ658SlTha-TQHd1CR/view?usp=sharing"
+       target="_blank"
+       class="project-btn demo-btn">
+        <i class="fas fa-arrow-up-right-from-square"></i> View
+    </a>
+
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/ManjunathGlO/HR-Analytics-Dashboard.git" class="block-20 zoom-effect" style="background-image: url('images/HR_Anlys_Dash.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+				<h3 class="heading"><a href="https://github.com/ManjunathGlO/HR-Analytics-Dashboard.git">HR Analytics Dashboard</a></h3>
+					<div class="project-tags">
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Excel</span>
+    <span>Power BI</span>
+</div>
+                <p>Built a Power BI dashboard analyzing 1.417K employees to track attrition (16.3%), department headcount, and satisfaction trends for retention planning.</p>
+				<div class="project-buttons">
+
+    <a href="https://github.com/ManjunathGlO/HR-Analytics-Dashboard.git"
+       target="_blank"
+       class="project-btn github-btn">
+        <i class="fab fa-github"></i> Code
+    </a>
+
+    <a href="https://drive.google.com/file/d/1ZfzBzN4I_OWMmLFN43uCwlI2jfkVSXFq/view?usp=sharing"
+       target="_blank"
+       class="project-btn demo-btn">
+        <i class="fas fa-arrow-up-right-from-square"></i> View
+    </a>
+
+</div>
+              </div>
+            </div>
+			
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/ManjunathGlO/Sales-Profit-Analysis-Dashboard.git" class="block-20 zoom-effect" style="background-image: url('images/Sales and Profit Dashboard Data.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+				<h3 class="heading"><a href="https://github.com/ManjunathGlO/Sales-Profit-Analysis-Dashboard.git"> Sales and Profit Dashboard</a></h3>
+				<div class="project-tags">
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Excel</span>
+    <span>Power BI</span>
+</div>
+                <p>Built an Excel dashboard analyzing $23.6M in sales and $2.47M profit by year, category, and region to identify top-performing customers.</p>
+				<div class="project-buttons">
+
+    <a href="https://github.com/ManjunathGlO/Sales-Profit-Analysis-Dashboard.git"
+       target="_blank"
+       class="project-btn github-btn">
+        <i class="fab fa-github"></i> Code
+    </a>
+
+    <a href="https://drive.google.com/file/d/1mR10Pvjhd8tPKnGO2nkJc9Hz33sc4Kmn/view?usp=sharing"
+       target="_blank"
+       class="project-btn demo-btn">
+        <i class="fas fa-arrow-up-right-from-square"></i> View
+    </a>
+
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/rishabhnmishra/Madhav_Store_Analysis_PowerBI/blob/main/Madhav%20Store%20dashboard.jpg" class="block-20 zoom-effect" style="background-image: url('images/HR_Team_Analytics.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+				<h3 class="heading"><a href="https://github.com/ManjunathGlO/HR-Team-Analytics.git"> HR Team Analytics</a></h3>
+				<div class="project-tags">
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Excel</span>
+    <span>Power BI</span>
+</div>
+                <p>Built an Excel dashboard tracking 171 headcount and 27% attrition across job levels, departments, and reporting structure to surface workforce trends.</p>
+				<div class="project-buttons">
+
+    <a href="https://github.com/ManjunathGlO/HR-Team-Analytics.git"
+       target="_blank"
+       class="project-btn github-btn">
+        <i class="fab fa-github"></i> Code
+    </a>
+
+    <a href="https://drive.google.com/file/d/1pAZcHd0VJPd4AiOGdsHVeUJ0vVxn409b/view?usp=sharing"
+       target="_blank"
+       class="project-btn demo-btn">
+        <i class="fas fa-arrow-up-right-from-square"></i> View
+    </a>
+
+</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/ManjunathGlO/E-Commerce-Sales-Analysis..git" class="block-20 zoom-effect" style="background-image: url('images/ecommerce-blank.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">	
+
+                <h3 class="heading"><a href="https://github.com/ManjunathGlO/E-Commerce-Sales-Analysis..git"> E-Commerce Sales Analysis</a></h3>
+				<div class="project-tags">
+    <span>SQL</span>
+    <span>Python</span>
+    <span>Excel</span>
+    <span>Power BI</span>
+</div>
+                <p>Built an Excel dashboard analyzing sales performance and customer segments by region and category to uncover purchasing trends.</p>
+				<div class="project-buttons">
+
+    <a href="https://github.com/ManjunathGlO/E-Commerce-Sales-Analysis..git"
+       target="_blank"
+       class="project-btn github-btn">
+        <i class="fab fa-github"></i> Code
+    </a>
+
+    <a href="https://drive.google.com/file/d/1_RuhACFQxrZQ7RO9hEU4r58YT6LYei6v/view?usp=sharing"
+       target="_blank"
+       class="project-btn demo-btn">
+        <i class="fas fa-arrow-up-right-from-square"></i> View
+    </a>
+
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+		<!-- added justify-content-center to center align the last two projects -->
+		
+				</div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+		<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="20">0</strong>
+                <span>Achievements</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="80">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="300">0</strong>
+                <span>SQL Queries</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="5">0</strong>
+                <span>Core Skills</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<h2>More projects on<span> Github  </span> </h2>
+						<div class="heading"> <h4> I love to solve business problems &amp; uncover hidden data stories </h4>
+						<br>
+						<p><a href="https://github.com/ManjunathGlO" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <!-- <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me!</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<h3 class="mb-4">Address</h3>
+	            <p>Bengaluru, India</p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<h3 class="mb-4">Contact Number</h3>
+	            <p><a href="tel://+918431769635">+91 8431769635</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<h3 class="mb-4">Email Address</h3>
+	            <p><a href="mailto:manjunathgl064@gmail.com">manjunathgl064@gmail.com</a></p>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<h3 class="mb-4">Download Resume</h3>
+	            <p><a href="#">resumelink</a></p>
+	          </div>
+          </div> -->
+
+		  <!-- <div class="container">
+			<br>
+			<br>
+
+
+
+			
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on  </li>
+					  <li class="ftco-animate"><a href="https://www.youtube.com/@RshabhMishraOfficial"><span class="icon-youtube"></span></a></li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/manjunathgl/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://twitter.com/rshabhnmishra"><span class="icon-twitter"></span></a></li>
+					  <li class="ftco-animate"><a href="https://twitter.com/rishabhnmishra"><span class="icon-facebook"></span></a></li>
+				      <li class="ftco-animate"><a href="https://www.instagram.com/rshabhnmishra/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				<br>
+		   </div> -->
+
+ <!-- Certificate -->
+  <section class="certifications" id="certification-section">
+    <h2 class="section-title">My Certifications</h2>
+    <div class="certificates-container">
+      <div class="certificate" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/Screenshot 2026-08-02 162324.png" alt="Certification 3">
+            <h3>Certification 1</h3>
+            <p>Issued by <strong>IT Vedant</strong></p>
+            <p><strong>Credential ID:</strong> CERT_380_4</p>
+            <p><a href="https://drive.google.com/file/d/1cWRCsjwq6ydYRuzJons0s4Be9w9lXoZ4/view?usp=sharing" class="credential-button" target="_blank">View Credential</a></p>
+        </div>  
+      
+      <div class="certificate" data-aos="fade-up">
+            <img src="images/Screenshot 2026-08-02 160941.png" alt="Certification 1">
+            <h3>Certification 2</h3>
+            <p>Issued by <strong>IBM</strong></p>
+            <p><strong>Credential ID:</strong> EE88...B329</p>
+            <p><a href="https://courses.itvedant.skillsnetwork.site/certificates/ee8838843d14498bb4458de700fbb329" class="credential-button" target="_blank">View Credential</a></p>
+        </div>
+        <div class="certificate" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/WhatsApp Image 2024-09-24 at 12.09.11 PM (5).jpeg" alt="Certification 2">
+            <h3>Certification 3</h3>
+            <p>Issued by <strong>IT Vedant</strong></p>
+            <p><strong>Credential ID:</strong> ITV66...5638</p>
+            <p><a href="https://drive.google.com/file/d/1SeJBrygdDKOvhTH8cIKsTq54S51T7bWg/view?usp=sharing" class="credential-button" target="_blank">View Credential</a></p>
+        </div>
+        
+    </div>
+</section>
+        
+
+		   <section class="contact-section" id="contact-section">
+        <div class="row justify-content-center mb-5 pb-3">
+    <p>Below are the details to reach out to me!</p>
+</div>
+    <div class="container">
+      
+
+        <div class="contact-left">
+
+            <h2>Contact Me</h2>
+
+            <div class="contact-info">
+                <i class="fas fa-paper-plane"></i>
+                <span>manjunathgl064@gmail.com</span>
+            </div>
+
+            <div class="contact-info">
+                <i class="fas fa-phone-alt"></i>
+                <span>+91 8431769635</span>
+            </div>
+
+            <div class="social-icons">
+
+                <a href="https://www.linkedin.com/in/manjunathgl/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+
+                <a href="https://github.com/ManjunathGlO" target="_blank"><i class="fab fa-github"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"target="_blank"></i></a>
+
+                <a href="https://x.com/manjugl_here" target="_blank"><i class="fab fa-twitter"></i></a>
+
+            </div>
+
+            <a href="resume.pdf" class="download-btn">
+                Download Resume
+            </a>
+
+        </div>
+
+        <div class="contact-right">
+
+            <form id="contactForm">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+
+                <input type="email" name="email" placeholder="Your Email" required>
+                
+                <input type="text" name="subject" placeholder="Subject" required>
+
+                <textarea name="message" placeholder="Your Message" required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+  
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">manju</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+
+  <!-- Scroll To Top Button -->
+
+
+<a href="#" id="scrollTopBtn">
+    ⮝
+</a>
+
+<script>
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", function () {
+
+    if (window.pageYOffset > 300) {
+        scrollBtn.classList.add("show");
+    } else {
+        scrollBtn.classList.remove("show");
+    }
+
+});
+
+scrollBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+</script>	
+
+<div class="social-sidebar">
+
+    <a href="https://github.com/ManjunathGlO" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/manjunathgl/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="mailto:manjunathgl064@gmail.com" title="Email">
+        <i class="fas fa-envelope"></i>
+    </a>
+
+</div>
+
+<!-- contact form -->
+<script>
+const scriptURL = "https://script.google.com/macros/s/AKfycbzxk8KiV7a2Z6_C0L9BUPglAunxexLQ3RYVvXS_a27V7dCXXP4nQsFrffp6h_H8ZcTePw/exec";
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    try {
+        const response = await fetch(scriptURL, {
+            method: "POST",
+            body: new FormData(form)
+        });
+
+        const result = await response.json();
+
+        if (result.status === "success" || result.result === "success") {
+            alert("✅ Message sent successfully!");
+            form.reset();
+        } else {
+            alert("❌ Failed to send message.");
+        }
+    } catch (error) {
+        console.error(error);
+        alert("❌ Something went wrong.");
+    }
+});
+</script>
+
+  </body>
+</html>
+
+
+
+
+
+
