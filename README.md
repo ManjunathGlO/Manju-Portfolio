@@ -263,17 +263,23 @@ This portfolio is deployed using **GitHub Pages**.
 
 ### 🏠 Home
 
-Add a screenshot of your portfolio here:
+<img width="1917" height="858" alt="Home" src="https://github.com/user-attachments/assets/7bec9a57-0ba6-49c1-9d9d-13102bfaa8ae" />
 
-```markdown
-![Portfolio Home](images/portfolio-home.png)
-```
 
 ### 📊 Projects
 
-```markdown
-![Portfolio Projects](images/portfolio-projects.png)
-```
+<img width="1917" height="858" alt="Projectsection" src="https://github.com/user-attachments/assets/1376c72f-8eaa-4e9e-a4eb-56ca954312a7" />
+
+<img width="1916" height="853" alt="Project1" src="https://github.com/user-attachments/assets/3920c6f3-f37e-41ea-9d66-19ff6b0e337c" />
+
+### Certifications
+<img width="1915" height="858" alt="Certifications" src="https://github.com/user-attachments/assets/b3044858-1115-4839-b9df-8ebe9e8c6228" />
+
+### Contact
+<img width="1917" height="862" alt="Contact" src="https://github.com/user-attachments/assets/e07d6fab-96bd-431f-a0fc-ac47c840739c" />
+
+---
+
 <h2 align="center">📄 Resume</h2>
 
 <p align="center">
