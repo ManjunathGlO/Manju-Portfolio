@@ -274,14 +274,17 @@ Add a screenshot of your portfolio here:
 ```markdown
 ![Portfolio Projects](images/portfolio-projects.png)
 ```
+<h2 align="center">📄 Resume</h2>
 
----
+<p align="center">
+  My resume is available for download below.
+</p>
 
-## 📄 Resume
-
-My resume is available directly through my portfolio website.
-
-📄 **[View / Download Resume](YOUR_RESUME_LINK)**
+<p align="center">
+  <a href="./Resume/Manjunath_G_L_Resume.pdf">
+    <img src="https://img.shields.io/badge/View%20%2F%20Download%20Resume-1F4E79?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="View Resume"/>
+  </a>
+</p>
 
 ---
 
