@@ -281,7 +281,7 @@ Add a screenshot of your portfolio here:
 </p>
 
 <p align="center">
-  <a href="./Resume/Manjunath_G_L_Resume.pdf">
+  <a href="./Resume/Manjunath_GL_Data_Analyst_Resume.pdf">
     <img src="https://img.shields.io/badge/View%20%2F%20Download%20Resume-1F4E79?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="View Resume"/>
   </a>
 </p>
