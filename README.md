@@ -4,7 +4,7 @@ Welcome to my **personal Data Analyst portfolio** 👋
 
 This repository contains my portfolio website, showcasing my **data analytics projects, technical skills, dashboards, machine learning work, and professional profile**.
 
-🔗 **Live Portfolio:** [Visit My Portfolio](YOUR_GITHUB_PAGES_URL)
+🔗 **Live Portfolio:** [Visit My Portfolio](https://manjunathglo.github.io/Manju-Portfolio/)
 
 ---
 
@@ -255,7 +255,7 @@ This portfolio is deployed using **GitHub Pages**.
 7. Save the configuration
 8. GitHub will generate the live website URL
 
-🔗 **Live Website:** [Visit My Portfolio](YOUR_GITHUB_PAGES_URL)
+🔗 **Live Website:** [Visit My Portfolio](https://manjunathglo.github.io/Manju-Portfolio/)
 
 ---
 
