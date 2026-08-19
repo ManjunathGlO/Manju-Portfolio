@@ -293,7 +293,7 @@ Add a screenshot of your portfolio here:
 * 💼 **LinkedIn:** [linkedin.com/in/manjunathgl](https://www.linkedin.com/in/manjunathgl/)
 * 🐙 **GitHub:** [github.com/ManjunathGlO](https://github.com/ManjunathGlO)
 * 📧 **Email:** [manjunathgl064@gmail.com](mailto:manjunathgl064@gmail.com)
-* 🌐 **Portfolio:** [Visit My Portfolio](YOUR_GITHUB_PAGES_URL)
+* 🌐 **Portfolio:** [Visit My Portfolio](https://manjunathglo.github.io/Manju-Portfolio/)
 
 ---
 
