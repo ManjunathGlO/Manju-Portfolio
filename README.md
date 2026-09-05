@@ -7,7 +7,7 @@ This repository contains my portfolio website, showcasing my **data analytics pr
 <img width="1917" height="858" alt="Home" src="https://github.com/user-attachments/assets/08c84182-168e-45ed-8269-cfbb7d84c798" />
 
 
-<h3 align="center"><a href="https://manjunathglo.github.io/Manju-Portfolio/"><strong>Want to see live preview »</strong></a></h3>
+<h3 align="center"><a href="https://manjunathglo.github.io/"><strong>Want to see live preview »</strong></a></h3>
 
 ---
 
